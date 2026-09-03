@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+
+  font-family: Arial, sans-serif;
+
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    #e8f7ff,
+    #c9ecff
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 720px;
+}
+
+.card {
+  text-align: center;
+
+  padding: 60px 40px;
+
+  background-color: rgba(255, 255, 255, 0.96);
+
+  border-radius: 22px;
+
+  border: 1px solid #d6efff;
+
+  box-shadow:
+    0 15px 40px rgba(30, 111, 160, 0.12);
+
+  animation: apparition 0.5s ease;
+}
+
+.annee {
+  font-size: 13px;
+  letter-spacing: 2px;
+
+  margin-bottom: 25px;
+
+  color: #2f7ca6;
+
+  font-weight: 600;
+}
+
+h1 {
+  font-family: Georgia, serif;
+
+  font-size: 42px;
+  line-height: 1.15;
+
+  color: #1d5d85;
+
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: Georgia, serif;
+
+  font-size: 36px;
+
+  color: #1d5d85;
+
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 17px;
+  line-height: 1.7;
+
+  color: #4f6472;
+
+  max-width: 540px;
+
+  margin: 0 auto 35px;
+}
+
+button,
+.download-btn {
+  border: none;
+
+  background-color: #2f7ca6;
+
+  color: white;
+
+  padding: 15px 30px;
+
+  border-radius: 30px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+button:hover,
+.download-btn:hover {
+  background-color: #1d5d85;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px rgba(29, 93, 133, 0.2);
+}
+
+.recherche-card {
+  display: none;
+}
+
+#nomMembre {
+  width: 100%;
+  max-width: 430px;
+
+  padding: 15px 18px;
+
+  margin-bottom: 20px;
+
+  border: 1px solid #acdff7;
+
+  border-radius: 12px;
+
+  background-color: #fafdff;
+
+  color: #1d5d85;
+
+  font-size: 16px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+#nomMembre::placeholder {
+  color: #8ba6b5;
+}
+
+#nomMembre:focus {
+  border-color: #2f7ca6;
+
+  box-shadow:
+    0 0 0 3px rgba(47, 124, 166, 0.12);
+}
+
+#messageErreur {
+  display: none;
+
+  margin-top: 18px;
+
+  font-size: 14px;
+  line-height: 1.5;
+
+  color: #b04444;
+}
+
+.carte-membre {
+  width: 100%;
+  max-width: 450px;
+
+  display: block;
+
+  margin: 25px auto;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 10px 30px rgba(30, 111, 160, 0.16);
+}
+
+.download-btn {
+  display: inline-block;
+
+  text-decoration: none;
+
+  margin-top: 10px;
+}
+
+.retour-btn {
+  margin-top: 15px;
+
+  background-color: transparent;
+
+  color: #2f7ca6;
+
+  border: 1px solid #2f7ca6;
+}
+
+.retour-btn:hover {
+  background-color: #e9f7ff;
+
+  color: #1d5d85;
+}
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* VERSION MOBILE */
+@media (max-width: 600px) {
+
+  body {
+    padding: 14px;
+  }
+
+  .card {
+    padding: 42px 22px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  button,
+  .download-btn {
+    width: 100%;
+    max-width: 330px;
+  }
+
+  .carte-membre {
+    max-width: 100%;
+  }
+}
+.logo-dynamique {
+  width: 95px;
+  height: auto;
+  display: block;
+  margin: 0 auto 18px;
+}
+
+.logo-dynamique + .annee {
+  position: relative;
+  padding-top: 16px;
+}
+
+.logo-dynamique + .annee::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 45px;
+  height: 2px;
+  background-color: #9edcff;
+  border-radius: 10px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+
+  background:
+    radial-gradient(circle at top left, #dff4ff 0%, transparent 35%),
+    radial-gradient(circle at bottom right, #ccecff 0%, transparent 30%),
+    #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+body {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+
+  background:
+    radial-gradient(circle at top left, #dff4ff 0%, transparent 35%),
+    radial-gradient(circle at bottom right, #ccecff 0%, transparent 30%),
+    #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+@media (max-width: 600px) {
+
+  .logo-dynamique {
+    width: 78px;
+  }
+
+  .card {
+    border-radius: 18px;
+  }
+
+  .annee {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+}
