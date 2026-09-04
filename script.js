@@ -106,8 +106,8 @@ const membres = [
   },
 
   {
-    nom: "tommy zege",
-    carte: "Cartes/Tommy-ZEGE.png"
+    nom: "tommy zenge",
+    carte: "Cartes/Tommy-ZENGE.png"
   },
 
   {
@@ -123,6 +123,10 @@ const membres = [
   {
     nom: "lauredi etoko",
     carte:"Cartes/Lauredi-ETOKO.png"
+  },
+  {
+    nom: "filhia nkama",
+    carte: "Cartes/Filhia-NKAMA.png"
   },
 ];
 
