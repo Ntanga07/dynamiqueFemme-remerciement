@@ -113,8 +113,17 @@ const membres = [
   {
     nom: "audrey katunda",
     carte: "Cartes/Audrey-KATUNDA.png"
-  }
+  },
 
+  {
+    nom: "forty mantuba",
+    carte: "Cartes/Forty-MANTUBA.png"
+  },
+  
+  {
+    nom: "lauredi etoko",
+    carte:"Cartes/Lauredi-ETOKO.png"
+  },
 ];
 
 
